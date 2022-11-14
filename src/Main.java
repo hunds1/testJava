@@ -8,5 +8,6 @@ public class Main {
         worker.addResponsibilities("учить питон");
         worker.getResponsibilities().forEach(System.out::println);
 
+        System.out.printf("test");
     }
 }
