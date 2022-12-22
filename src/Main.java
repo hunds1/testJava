@@ -7,6 +7,8 @@ public class Main {
         CSVReader.addBook();
 
         //штуки с сайтом
+        JsoupBook.tests();
+
 
         //штуки с бд
 

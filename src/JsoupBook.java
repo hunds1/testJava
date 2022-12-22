@@ -1,5 +1,9 @@
-public class Test { /*
-    public void test(){
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+public class JsoupBook {
+    public static void tests(){
         try {
             Document doc = Jsoup.connect("https://www.logobook.ru/").get();  //йоптыть
 
@@ -29,5 +33,5 @@ public class Test { /*
         }catch (Exception e){
             e.printStackTrace();
         }
-    }*/
+    }
 }
