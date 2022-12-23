@@ -25,7 +25,8 @@ public class ChildrenBooks extends Book {
     public static String YoungestAuthor() {
         try {
 
-            return String.format("");
+            return "";
+
         } catch (Exception e) {
             throw new IllegalArgumentException();
         }

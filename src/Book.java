@@ -1,5 +1,4 @@
 public abstract class Book {
-
     private String title; //название
     private String publishing ; // издательство
     private String price; //цена

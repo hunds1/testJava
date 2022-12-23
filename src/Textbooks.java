@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Textbooks extends Book {
     private String rating; // рейтинг
     private String subject;  //предмет
@@ -23,11 +25,26 @@ public class Textbooks extends Book {
 
     //самый популярный учебник
     public static String MostPopularTextbook() {
+        ArrayList<Book> books = new ArrayList<Book>();
         try {
+            var textBook = books.stream().filter(x -> x instanceof Textbooks).map(x -> (Textbooks) x).toList();
+            var title = "";
 
-            return String.format("");
+            for (var textBooks : textBook) {
+                if (textBooks.getRating() == "5") {
+                    title = textBooks.getTitle();
+                }
+            }
+           return title;
         } catch (Exception e) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Некорректные данне");
         }
     }
 }
+
+
+
+
+
+
+
