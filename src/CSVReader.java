@@ -37,7 +37,7 @@ public class CSVReader {
         String line = "";
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
-            var books = new ArrayList<Book>();
+            ArrayList<Book> books = new ArrayList<Book>();
             while ((line = br.readLine()) != null) { // пока файл не пустой счтываем его
                 String[] agr = line.split(";");
 
